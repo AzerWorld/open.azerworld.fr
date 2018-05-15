@@ -13,6 +13,40 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="../dist/jquery.typist.js"></script>
+		<script>
+		jQuery(function($) {
+			$('.typist')
+				.typist({
+					speed: 12,
+					text: 'Développeur'
+				})
+				.typistAdd(' nodejs')
+			        .typistPause(3000) // 3 sec
+			        .typistRemove(6)
+			        .typistAdd('skript')
+			        .typistPause(3000) // 3 sec
+			        .typistRemove(6)
+			        .typistAdd('java')
+			        .typistPause(1000) // 1 sec
+			        .typistAdd(' (un peu)')
+		                .typistPause(3000) // 3 sec
+			        .typistRemove(13)
+			        .typistAdd('web')
+			        .typistPause(3000) // 3 sec
+			        .typistRemove(4)
+			        .typistPause(3000) // 3 sec
+			        .typistRemove(11)
+			        .typistAdd('Administrateur Système')
+			        .typistPause(3000) // 3 sec
+			        .typistRemove(22)
+			        .typistAdd('Fondateur d’AzerWorld')
+			        .typistPause(3000)
+			        .typistRemove(22)
+			        .typistAdd('Passionné de la technologie depuis 2012 !');
+			});
+	       hljs.initHighlightingOnLoad();
+	       </script>
 	</head>
 	<body>
 
@@ -45,7 +79,7 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Ici, c'est opensource</h1>
+								<h1>Ici, c'est</h1> <h1 class="typist"></h1>
 							</header>
 							<div class="content">
 								<p>A responsive site template designed by HTML5 UP<br />
